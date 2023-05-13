@@ -1,0 +1,47 @@
+<Defs>
+  <GeneDef>
+    <defName>DigitalOrganicHybrid</defName>
+    <label>digital organic hybrid</label>
+    <labelShortAdj>digi-organic hybrid</labelShortAdj>
+    <description>The original digifoxes went through a conversion process, that using techniques long lost to time, converted their bodies into a combination of digital and organic matter. This rendered them immune to organic diseases. Gave them the ability to access data digitally by touch or sight. The abiility to download and store data directly into their minds. And, using simple internal defraging programs, are effectively immortal. Thanks to the genius of Dr. Arch13, this process has returned! Though, slightly dimmished. Dr. Arch13 is not responsible for...</description>
+    <iconPath>UI/Icons/Genes/DigiOrganic</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <marketValueFactor>4</marketValueFactor>
+    <statOffsets>
+      <GlobalLearningFactor>0.2</GlobalLearningFactor>
+    </statOffsets>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(13, 1)</li>
+        <li>(18, 0)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <makeImmuneTo>
+      <li>Flu</li>
+      <li>Malaria</li>
+      <li>SleepingSickness</li>
+      <li>Plague</li>
+      <li>WoundInfection</li>
+      <li>LungRot</li>
+      <li>GutWorms</li>
+      <li>MuscleParasites</li>
+    </makeImmuneTo>
+    <hediffGiversCannotGive>
+      <li>Carcinoma</li>
+      <li>HeartAttack</li>
+      <li>BadBack</li>
+      <li>Frail</li>
+      <li>Cataract</li>
+      <li>Dementia</li>
+      <li>Alzheimers</li>
+      <li>Asthma</li>
+      <li>HeartArteryBlockage</li>
+    </hediffGiversCannotGive>
+    <biostatCpx>6</biostatCpx>
+    <biostatMet>6</biostatMet>
+    <biostatArc>2</biostatArc>
+    <exclusionTags>
+      <li>Immunity</li>
+    </exclusionTags>
+  </GeneDef>
+</Defs>

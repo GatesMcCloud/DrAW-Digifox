@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- DigiFoxFur -->
+
+  <!-- Average -->
+  <HeadTypeDef Name="DigiFoxFurAverageBase" ParentName="AverageBase" Abstract="True">
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>DigiFoxFur</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="DigiFoxFurAverageBase">
+    <defName>DigiFoxFur_Average</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/DGFox_Face</graphicPath>
+    <modExtensions>
+     <li Class="GeneTools.GeneToolsHeadTypeDef">
+			<useShader>true</useShader>
+		 </li>     
+     <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+		    <shaderType>CutoutComplex</shaderType>
+          <colorType>Skin</colorType>
+          <colorTwoType>Hair</colorTwoType>
+     </li>
+    </modExtensions>
+  </HeadTypeDef>
+</Defs>

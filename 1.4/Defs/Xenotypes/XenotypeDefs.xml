@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <XenotypeDef>
+    <defName>DigiFox</defName>
+     <label>digifox</label>
+      <description>The Digifox(tm) returns thanks to the archogenius of Dr. Arch13! The original xenotype modeled long ago based on ancient and archaic terran signals was long thought lost to time. Its original xenogerm highly coveted, highly sought after for centuries by the ultra wealthy as the ultimate status symbol. But thanks to the wonderful genius of Dr. Arch13, its ancient secrets have been unlocked! Perfected, patented, and very purchasable by organics like you! The Digifox(tm) is a hybrid of archo-origins, a fusion of digital and organic matter combined! A wonder, lost to time, locked away by the glitterworlds, restored! Thanks to the archogenius of the wonderful Dr. Arch13! Dr.Arch13 is not responsible for...</description>
+      <descriptionShort>The Digifox(tm) is a hybrid of archo-origins, a fusion of digital and organic matter combined! Its original xenogerm highly coveted, highly sought after for centuries by the ultra wealthy as the ultimate status symbol. But thanks to the wonderful genius of Dr. Arch13, its ancient secrets have been unlocked! Perfected, patented, and very purchasable by organics like you! Thanks to the archogenius of the wonderful Dr. Arch13! Dr. Arch13 is not responsible for adverse repurcussions due to the use of Dr. Arch13 brand Gene Infusers and Presto Xeno! products. Travel to glitterworlds after use of Dr. Arch13 brand...</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/DigiFox</iconPath>
+         <inheritable>true</inheritable>
+    <genes>
+      <li>DigiFoxFur</li>
+      <li>DigiFoxEyes</li>
+      <li>DigiFoxTail</li>
+      <li>DigiFoxEars</li>
+      <li>DigiFoxWings</li>
+      <li>DigitalOrganicHybrid</li>
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Skin_SheerWhite</li>
+      <li>Hair_SnowWhite</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

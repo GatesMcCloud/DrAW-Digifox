@@ -1,0 +1,72 @@
+<Defs> 
+ <RulePackDef>
+    <defName>NamerFactionOutlanderDigiFox</defName>
+	<include>
+      <li>OutlanderPlaceNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[nearnameinitial]</li>
+        <li>r_name->[nearnameinitial] [political_union_outlander]</li>
+        <li>r_name->[nearnameinitial] [political_adjective] [political_union_outlander]</li>
+        <li>r_name->[political_union_outlander] of [nearnameinitial]</li>
+        <li>r_name->[political_adjective] [political_union_outlander] of [nearnameinitial]</li>
+        <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+        <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>
+        <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
+      </rulesFiles>
+    </rulePack>
+ </RulePackDef>
+
+ <RulePackDef>
+        <defName>NamerSettlementOutlanderDigiFox</defName>
+        <rulePack>
+            <rulesStrings>
+				<li>r_name->[Intial] [Secondary] [Last]</li>
+
+				<li>Intial->Rick's</li>
+				<li>Intial->Liliana's</li>
+				<li>Intial->Jack's</li>
+				<li>Intial->A</li>
+				<li>Intial->Vivian's</li>
+				<li>Intial->Warning:</li>
+				<li>Intial->Rika's</li>
+				<li>Intial->Miles'</li>
+				<li>Intial->Jerry's</li>
+                <li>Intial->Jim's</li>
+                <li>Intial->Red's</li>
+                <li>Intial->Kit's</li>
+                <li>Intial->Caution:</li>
+
+				<li>Secondary->Firey</li>
+				<li>Secondary->Dark</li>
+				<li>Secondary->Calm</li>
+				<li>Secondary->Last</li>
+				<li>Secondary->Dangerous</li>
+				<li>Secondary->Out of The Way</li>
+				<li>Secondary->Safe</li>
+				<li>Secondary->Welcominig</li>
+				<li>Secondary->Free</li>
+				<li>Secondary->Quiet</li>
+				<li>Secondary->Peacful</li>
+				<li>Secondary->Hazardous</li>
+				<li>Secondary->Indepedent</li>
+				<li>Secondary->Liberated</li>	
+
+				<li>Last->Hideaway</li>
+				<li>Last->Enclave</li>
+				<li>Last->Chance</li>
+				<li>Last->Place</li>
+				<li>Last->Home</li>
+				<li>Last->Den</li>
+				<li>Last->Bar</li>
+				<li>Last->Free Town</li>
+				<li>Last->Place</li>
+                <li>Last->Corner</li>
+			</rulesStrings>
+        </rulePack>
+ </RulePackDef>
+</Defs>

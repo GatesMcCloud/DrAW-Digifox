@@ -1,0 +1,25 @@
+<Defs>
+ 
+  <HediffDef Name="DigiHediffBase" Abstract = "True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+ 
+ 
+  <HediffDef ParentName = "DigiHediffBase">
+    <defName>DigiInvisibility</defName>
+    <label>digital invisibility</label>
+    <description>Digiitally induced invisibility via refracting light around the users body</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties">
+        <compClass>HediffComp_Invisibility</compClass>
+      </li>
+    </comps>
+  </HediffDef>
+ </Defs>

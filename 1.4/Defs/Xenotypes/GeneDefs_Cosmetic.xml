@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Ears -->
+
+ <GeneDef ParentName="GeneEarsBase">
+   <defName>DigiFoxEars</defName>
+   <label>digifox ears</label>
+   <description>DigiFox(tm) ears complete the iconic look of the DigiFox(tm), exactly as described in ancient terran lore. While giving the DigiFox(tm) superior hearing over that of a baseline human, given their digital organic form a DigiFox(tm)'s ears are able to pick up wireless signals allowing for wireless access to networks, thus allowing to access information with ease. Any rumors of myself being the original designer of this xenotype series are unfounded and slander that I will vigorously...</description>
+   <iconPath>UI/Icons/Genes/DigiFoxEars</iconPath>
+      <iconColor>(1, 1, 1)</iconColor>
+   <displayCategory>Cosmetic</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <marketValueFactor>4</marketValueFactor>
+    <statOffsets>
+      <GlobalLearningFactor>0.3</GlobalLearningFactor>
+    </statOffsets>
+   <capMods>
+       <li>
+         <capacity>Hearing</capacity>
+         <postFactor>1.05</postFactor>
+      </li>
+   </capMods>
+   <graphicData>
+      <graphicPath>Pawn/DigiFoxEars/DGFox_Ears</graphicPath>
+         <colorType>Skin</colorType>
+         <layer>PostHair</layer>
+         <useSkinShader>false</useSkinShader>
+   </graphicData>
+   <modExtensions>
+      <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+		   <shaderType>CutoutComplex</shaderType>
+         <colorType>Skin</colorType>
+		   <colorTwoType>Hair</colorTwoType>
+      </li>
+   </modExtensions>
+ </GeneDef>
+
+	
+    <!-- Eyes -->
+
+
+ <GeneDef ParentName="GeneEyeColor">
+    <defName>DigiFoxEyes</defName>
+      <label>digifox eyes</label>
+       <labelShortAdj>digifox eyed</labelShortAdj>
+        <description>Ah, a fine choice! The enigmatic and alluring eyes of the Digifox(tm), just like in your favorite ancient terran stories you organics love so much! Dr. Arch13 is not responsible for adverse repurcussions for... </description>
+         <iconPath>UI/Icons/Genes/DigiFoxEyes</iconPath>
+         <displayCategory>Cosmetic</displayCategory>
+          <displayOrderInCategory>1</displayOrderInCategory>
+          <marketValueFactor>4</marketValueFactor>
+          <statOffsets>
+           <PawnBeauty>2</PawnBeauty>
+          </statOffsets>
+    <graphicData>
+      <drawScale>0.29</drawScale>
+       <graphicPath>Pawn/DigiFoxEyes/DGFox_Eye</graphicPath>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>charm</symbol></li>
+        <li><symbol>ele</symbol></li>
+        <li><symbol>grace</symbol></li>
+        <li><symbol>neat</symbol></li>
+        <li><symbol>cute</symbol></li>
+        <li><symbol>beauti</symbol></li>
+        <li><symbol>smooth</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+
+ </GeneDef>
+
+	<!-- ====== Tails ====== -->
+
+
+  <GeneDef ParentName="GeneTailBase">
+      <defName>DigiFoxTail</defName>
+      <label>digifox tail</label>
+      <description>What is a DigiFox(tm) with out the iconic DigiFox(tm) tail? The DigiFox(tm) tail is well known across the Glitterworlds for it's incredibly fluffy and luxurious fur. Dr. Arch13 is not responsible for adverse repurcussions for...</description>
+      <iconPath>UI/Icons/Genes/DigiFoxTail</iconPath>
+      <iconColor>(1, 1, 1)</iconColor>
+      <displayCategory>Cosmetic</displayCategory>
+      <displayOrderInCategory>32</displayOrderInCategory>
+      <marketValueFactor>4</marketValueFactor>
+      <statOffsets>
+         <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      </statOffsets>
+            <biostatCpx>1</biostatCpx>
+            <biostatMet>1</biostatMet>
+     <graphicData>
+      <graphicPath>Pawn/DigiFoxTail/DGFox_Tail</graphicPath>
+         <colorType>Skin</colorType>
+           <drawOffsetNorth>(0.1, 0.2, -0.25)</drawOffsetNorth>
+           <drawOffsetSouth>(-0.1, -0.1, -0.25)</drawOffsetSouth>
+           <drawOffsetEast>(-0.5, -0.1, -0.29)</drawOffsetEast>
+     </graphicData>
+      <modExtensions>
+       <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+		    <shaderType>CutoutComplex</shaderType>
+          <colorType>Skin</colorType>
+          <colorTwoType>Hair</colorTwoType>
+       </li>
+     </modExtensions>
+  </GeneDef>
+
+
+      <!-- ====== Wings ====== -->
+
+  <GeneDef>
+         <defName>DigiFoxWings</defName>
+          <label>digifox wings</label>
+           <iconPath>UI/Icons/Genes/DigiFoxWings</iconPath>
+                  <iconColor>(1, 1, 1)</iconColor>
+              <description>Ah yes, DigiFox(tm) wings. While they compliment the iconic look, they aren't actual wings. They act more like stablizers that add in the agility of the DigiFox(tm). Dr. Arch13 is not responsible for adverse repurcussions for...</description>
+                  <biostatCpx>1</biostatCpx>
+                  <biostatMet>1</biostatMet>
+              <displayCategory>Cosmetic</displayCategory>
+             <displayOrderInCategory>44</displayOrderInCategory>
+             <marketValueFactor>4</marketValueFactor>
+             <statOffsets>
+              <MoveSpeed>0.4</MoveSpeed>
+             </statOffsets>
+         <graphicData>
+                  <colorType>Skin</colorType>
+                  <graphicPath>Pawn/DigiFoxWings/DGFox_Wings</graphicPath>
+                  <drawLoc>Tailbone</drawLoc>
+                  <drawScale>2</drawScale>
+                  <drawOffsetNorth>(0,0.2,0)</drawOffsetNorth>
+                  <drawOffsetSouth>(0,-0.1,0)</drawOffsetSouth>
+                  <drawOffsetEast>(-0.14, 0.0, 0)</drawOffsetEast>
+         </graphicData>
+            <exclusionTags>
+               <li>Wing</li>
+               <li>Wings</li>
+            </exclusionTags>
+         <symbolPack>
+            <wholeNameSymbols>
+              <li><symbol>speeder</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+              <li><symbol>speed</symbol></li>
+              <li><symbol>fast</symbol></li>
+              <li><symbol>quick</symbol></li>
+              <li><symbol>agi</symbol></li>
+              <li><symbol>nimb</symbol></li>
+              <li><symbol>swift</symbol></li>
+              <li><symbol>flash</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+              <li><symbol>flash</symbol></li>
+              <li><symbol>runner</symbol></li>
+              <li><symbol>sprinter</symbol></li>
+            </suffixSymbols>
+         </symbolPack>
+
+   <modExtensions>
+      <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+		             <shaderType>CutoutComplex</shaderType>
+                        <colorType>Skin</colorType>
+                          <colorTwoType>Hair</colorTwoType>
+      </li>
+   </modExtensions>
+  </GeneDef>
+</Defs>

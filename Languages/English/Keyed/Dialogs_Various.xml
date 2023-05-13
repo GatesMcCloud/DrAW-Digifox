@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<DigifoxFactionGreetingHostile>{0} The silence deafens the coms. Whether anyone is listening, there is no way to tell.</DigifoxFactionGreetingHostile>
+	<DigifoxFactionGreetingHostileAppreciative> {0} demands that you prove you aren't in league with that damn AI. You'll have to earn their trust. Bring gifts to one of {0_possessive} settlements or release {0_possessive} faction's prisoners unharmed. Until then, {0_pronoun} is unwilling to talk.</DigifoxFactionGreetingHostileAppreciative>
+	<DigifoxFactionGreetingWary>{0} gives a cold greeting and asks why'd you called.</DigifoxFactionGreetingWary>
+	<DigifoxFactionGreetingWarm>{0} warmly greets {NEGOTIATOR_labelShort} and asks what {LEADER_pronoun} can do to help you.</DigifoxFactionGreetingWarm>
+	<DigifoxMilitaryAidSent>{0} signals that troops will arrive shortly.</DigifoxMilitaryAidSent>
+
+</LanguageData>

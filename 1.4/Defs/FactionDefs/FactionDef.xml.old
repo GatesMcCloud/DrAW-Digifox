@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>DigifoxEnclave</defName>
+		<label>digifox enclave</label>
+		<classicIdeo>true</classicIdeo>
+		<description>A group of digifox that have escaped enslavement from various glitterworlds. They seek refuge from those that highly desire them. They are distrustful of outsiders.</description>
+		<factionIconPath>UI/Icons/Factions/DigiFoxEnclave</factionIconPath>
+
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>				
+				<DigiFox>999</DigiFox>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<colorSpectrum>
+          <li>(0.35, 0.30, 0.60)</li>
+          <li>(0.45, 0.40, 0.90)</li>
+        </colorSpectrum>
+		<configurationListOrderPriority>10</configurationListOrderPriority>
+        <pawnGroupMakers Inherit="False">
+          <li>
+            <!-- Normal fights, standard mix -->
+            <kindDef>Combat</kindDef>
+              <options>
+                <Villager_DigiFox>5</Villager_DigiFox>
+			          <TownGuard_DigiFox>10</TownGuard_DigiFox>
+			          <MercenaryGunner_DigiFox>12</MercenaryGunner_DigiFox>
+			          <MercenaryElite_DigiFox>10</MercenaryElite_DigiFox>
+			          <TownCouncilman_DigiFox>10</TownCouncilman_DigiFox>
+              </options>
+          </li>
+          <li>
+            <kindDef>Peaceful</kindDef>
+              <options>
+                <Villager_DigiFox>20</Villager_DigiFox>
+			          <TownGuard_DigiFox>10</TownGuard_DigiFox>
+			          <TownCouncilman_DigiFox>10</TownCouncilman_DigiFox>
+              </options>
+          </li>
+          <li>
+            <kindDef>Trader</kindDef>
+              <traders>
+			          <TownTrader_DigiFox>1</TownTrader_DigiFox>
+			        </traders>
+			        <carriers>
+			          <Muffalo>6</Muffalo>
+			          <Alpaca>2</Alpaca>
+			        </carriers>
+			        <guards>
+			           <Villager_DigiFox>1</Villager_DigiFox>
+			           <TownGuard_DigiFox>4</TownGuard_DigiFox>
+			           <MercenaryGunner_DigiFox>9</MercenaryGunner_DigiFox>
+			           <MercenaryElite_DigiFox>10</MercenaryElite_DigiFox>
+			        </guards>
+          </li>
+          <li>
+            <kindDef>Settlement</kindDef>
+              <options>
+                <Villager_DigiFox>10</Villager_DigiFox>
+				        <TownGuard_DigiFox>10</TownGuard_DigiFox>
+				        <MercenaryGunner_DigiFox>7</MercenaryGunner_DigiFox>
+				        <MercenaryElite_DigiFox>10</MercenaryElite_DigiFox>
+				        <TownCouncilman_DigiFox>10</TownCouncilman_DigiFox>
+              </options>
+          </li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Miners</kindDef>
+              <commonality>1</commonality>
+               <options>
+                 <Miner>1</Miner>
+               </options>
+          </li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Hunters</kindDef>
+              <commonality>1</commonality>
+                <options>
+                  <Hunter>1</Hunter>
+                </options>
+          </li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Loggers</kindDef>
+              <commonality>1</commonality>
+                 <options>
+                   <Logger>1</Logger>
+                 </options>
+          </li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Farmers</kindDef>
+             <commonality>1</commonality>
+               <options>
+                  <Farmer>1</Farmer>
+               </options>
+          </li>
+      </pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="PirateBandBase">
+		<defName>DigifoxPirateBand</defName>
+		<label>digifox pirate crew</label>
+		<description>A group of former digifox slaves that formed together to protect themselves from glitterworld hunters seeking the bounty from a deranged AI obessed with digifoxes. They raid anyone they come across, taking no chances whether those they attack are on the Doctor's payroll.</description>
+		<factionIconPath>UI/Icons/Factions/DigiFoxPirate</factionIconPath>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<DigiFox>999</DigiFox>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+        <pawnGroupMakers Inherit="False">
+           <li>
+                <!-- Standard -->
+             <kindDef>Combat</kindDef>
+              <commonality>100</commonality>
+              <options>
+                <Pirate>10</Pirate>
+                <MercenaryGunner_DigiFox>10</MercenaryGunner_DigiFox>
+                <Mercenary_Elite>2</Mercenary_Elite>
+                <PirateBoss>1</PirateBoss>
+              </options>
+           </li>
+           <li>
+                <!-- Elite -->
+              <kindDef>Combat</kindDef>
+              <commonality>30</commonality>
+              <disallowedStrategies>
+                  <li>Siege</li>
+              </disallowedStrategies>
+              <options>
+                <MercenaryGunner_DigiFox>15</MercenaryGunner_DigiFox>
+                <Mercenary_Elite>10</Mercenary_Elite>
+                <PirateBoss>5</PirateBoss>
+              </options>
+           </li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Miners</kindDef>
+             <commonality>1</commonality>
+              <options>
+                <Miner>1</Miner>
+              </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Hunters</kindDef>
+              <commonality>1</commonality>
+                <options>
+                  <Hunter>1</Hunter>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Loggers</kindDef>
+              <commonality>1</commonality>
+              <options>
+                <Logger>1</Logger>
+              </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+              <kindDef>Farmers</kindDef>
+              <commonality>1</commonality>
+                <options>
+                  <Farmer>1</Farmer>
+                </options>
+            </li>
+         </pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

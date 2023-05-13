@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!-- Fur -->
+
+  <GeneDef>
+    <defName>DigiFoxFur</defName>
+     <label>digifoxfur</label>
+      <labelShortAdj>digifoxfurred</labelShortAdj>
+       <description>The iconic fur of the Digifox(tm) from ancient terran lore. Smoother than the finiest hyperweave silks, Digifox(tm) fur is highly prized across the Glitterworlds for it's luxurious appearance and feel, so I am told by your fellow organics. Dr. Arch13 is not responsible for adverse repurcussions for...</description>
+      <biostatCpx>1</biostatCpx>
+      <biostatMet>0</biostatMet>
+       <displayCategory>Cosmetic</displayCategory>
+        <displayOrderInCategory>70</displayOrderInCategory>
+      <marketValueFactor>4</marketValueFactor>
+         <iconPath>UI/Icons/Genes/DigiFoxFur</iconPath>
+          <iconColor>(1, 1, 1)</iconColor>
+        <abilities>
+            <li>Light_Refraction</li> 
+        </abilities>
+    <forcedHeadTypes>
+      <li>DigiFoxFur_Average</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+        <li>Furskin</li>
+        <li>BaldOnly</li>
+      </tags>
+    </beardTagFilter>
+        <exclusionTags>
+          <li>HairStyle</li>
+          <li>Fur</li>
+          <li>BeardStyle</li>
+          <li>Beauty</li>
+        </exclusionTags>
+          <statOffsets>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <PawnBeauty>3</PawnBeauty>
+          </statOffsets>
+          <graphicData>
+           <colorType>Hair</colorType>
+              <skinIsHairColor>true</skinIsHairColor>
+              <tattoosVisible>false</tattoosVisible>
+          </graphicData>
+    <modExtensions>
+     <li Class="GeneTools.GeneToolsGeneDef">
+		       <forcedBodyTypesChild>
+			              <li>DGChild</li>
+		       </forcedBodyTypesChild>
+              <forcedBodyTypesFemale>
+			              <li>DGFemale</li>
+		          </forcedBodyTypesFemale>
+                <forcedBodyTypes>
+			              <li>DGMale</li>
+                    <li>DGHulk</li>
+                    <li>DGThin</li>
+                    <li>DGFat</li>
+		            </forcedBodyTypes>
+      </li>        
+     <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+		   <shaderType>CutoutComplex</shaderType>
+         <colorType>Skin</colorType>
+		   <colorTwoType>Hair</colorTwoType>
+     </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>
